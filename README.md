@@ -161,13 +161,53 @@ pip install pandas numpy matplotlib seaborn scikit-learn jupyter
 - Los datos están en formato CSV estándar
 - No se requieren APIs externas para la ejecución básica
 
+## Parte II: Preprocesamiento y Optimización ✅ COMPLETADA
+
+### Pipeline de Machine Learning Implementado
+
+**Notebook Principal**: `Parte2_Preprocessing_and_Optimization.ipynb`
+
+#### 🔧 Preprocesamiento Avanzado:
+- **Feature Engineering**: 20+ indicadores técnicos (RSI, MACD, Bollinger Bands, Stochastic, Williams %R, MFI, ATR)
+- **Pipeline Automatizado**: ColumnTransformer con StandardScaler y OneHotEncoder
+- **Limpieza de Datos**: Manejo de valores nulos y outliers
+- **División Temporal**: 80% entrenamiento, 20% prueba (validación realista)
+
+#### 🤖 Modelos Evaluados:
+- Random Forest, XGBoost, LightGBM
+- Support Vector Machine, Logistic Regression
+- Gradient Boosting, Decision Tree, K-Nearest Neighbors
+
+#### 🔍 Optimización de Hiperparámetros:
+- **GridSearchCV**: Búsqueda exhaustiva
+- **RandomizedSearchCV**: Búsqueda aleatoria eficiente  
+- **Optuna**: Optimización bayesiana avanzada
+
+#### 📊 Evaluación Rigurosa:
+- Validación cruzada temporal
+- Métricas multiclase (Accuracy, Precision, Recall, F1)
+- Matriz de confusión y curvas ROC
+- Análisis de importancia de features
+
+### 🎯 Problema Resuelto: Clasificación de Señales de Trading
+
+**Classes**:
+- **BUY (0)**: Condiciones favorables para comprar
+- **HOLD (1)**: Mantener posición actual
+- **SELL (2)**: Condiciones favorables para vender
+
+**Criterios de Señales**:
+- Combinación de indicadores técnicos (RSI, Bollinger Bands, MACD, Stochastic)
+- Validación con retornos futuros reales
+- Balance entre precisión y recall
+
 ## Próximos Pasos
 
-1. **Desarrollo del Modelo Predictivo** (Parte II)
-2. **Implementación del Sistema de Recomendaciones**
-3. **Creación de Dashboard Interactivo**
-4. **Backtesting y Validación**
-5. **Deployment en Producción**
+1. ✅ **Desarrollo del Modelo Predictivo** (Parte II) - **COMPLETADO**
+2. **Backtesting Histórico**: Simulación de estrategias de trading
+3. **Dashboard Interactivo**: Visualización en tiempo real con Streamlit/Dash
+4. **API de Trading**: Conexión con brokers para ejecución automática
+5. **Deployment en Producción**: Containerización y monitoreo continuo
 
 ## Autores
 
